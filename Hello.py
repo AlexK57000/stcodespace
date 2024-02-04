@@ -15,7 +15,7 @@ st.write(f"Vecteur Prédit: {vecteur_pred}")
 st.write(f"Mean Absolute Error: {mae}")
 
 
-st.title("Hello World, je m'appelle A")
+#st.title("Hello World, je m'appelle A")
 
 st.code("def : class image", language='javascript')
 
