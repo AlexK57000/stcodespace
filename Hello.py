@@ -13,6 +13,12 @@
 # limitations under the License.
 
 import streamlit as st
+from sklearn.metrics import mean_absolute_error
+
+yer = mean_absolute_error(102, 92)
+
+st.write(yer)
+
 from streamlit.logger import get_logger
 
 LOGGER = get_logger(__name__)
