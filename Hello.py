@@ -1,25 +1,24 @@
-# Copyright (c) Streamlit Inc. (2018-2022) Snowflake Inc. (2022)
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 import streamlit as st
 from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_absolute_error
 
-yer = mean_absolute_error(102, 92)
+# Création de deux vecteurs de dimension 6
+vecteur_true = [1.5, 2.0, 3.2, 4.8, 5.5, 6.2]
+vecteur_pred = [1.2, 2.5, 3.0, 4.5, 5.8, 6.0]
 
-st.write(yer)
+# Calcul de l'erreur absolue moyenne
+mae = mean_absolute_error(vecteur_true, vecteur_pred)
+
+# Affichage du résultat
+st.write(f"Vecteur True: {vecteur_true}")
+st.write(f"Vecteur Prédit: {vecteur_pred}")
+st.write(f"Mean Absolute Error: {mae}")
 
 
+st.title("Hello World, je m'appelle A")
 
-if __name__ == "__main__":
-    run()
+st.code("def : class image", language='javascript')
+
+with st.sidebar:
+    st.button("test")
+    st.write("test d'écriture ici")
